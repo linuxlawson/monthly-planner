@@ -2,7 +2,7 @@
 Monthly Planner for Chores/Duties
 
 This is my first attempt using classes in python.  
-It confused me and I'm not sure I got it right but the program does work.
+It confused me and I'm not sure I got it right but the program works as it should.
 
 It's basically a copy of the recipe program with different wording.  
 
