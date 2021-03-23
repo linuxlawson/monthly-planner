@@ -22,7 +22,7 @@ Of course, you can use it for yourself too, to help keep track of what needs to 
 Note: Default extension is .txt so no need to add one.  
   
 
-<br><br>    
+<br>
 Tested on Linux
   
 
