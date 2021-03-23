@@ -15,7 +15,12 @@ For those of you who have kids, the idea is simple.
 Fill in some of the fields, save to a text file, print the text file,  
 and post it on their bedroom door, they will love you for it. :)  
 
-Note: Default extension is .txt so no need to add one.
+Note: Default extension is .txt so no need to add one.  
+  
+    
+<br><br>    
+Tested on Linux
+  
 
 
 
