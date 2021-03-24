@@ -1,11 +1,5 @@
 ## Monthly Planner
 
-
-This is my first attempt using classes in python.  
-It confused me and I'm not sure I got it right but the program works as it should.
-
-It's basically a copy of the recipe program with different wording.  
-
 **About:**  
 This is a monthly planner concerning chores/duties for you and/or your kids (if you have),  
 with entry fields to be filled in for: Daily, Weekly, and Monthly chores/duties.  
@@ -21,6 +15,10 @@ Of course, you can use it for yourself too, to help keep track of what needs to 
 
 Note: Default extension is .txt so no need to add one.  
   
+  
+This is my first attempt using classes in python.  
+I'm not sure I got it right but the program works as it should.
+
 
 <br>
 Tested on Linux
