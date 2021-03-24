@@ -15,8 +15,8 @@ Of course, you can use it for yourself too, to help keep track of what needs to 
 
 Important: Default extension is .txt so no need to add one.  
 
-Note: This is my first attempt using classes in python.  
 
+Note: This is my first attempt using classes in python.  
 I'm not sure I got it right but the program works as it should.
 
 
