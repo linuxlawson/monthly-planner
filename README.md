@@ -12,13 +12,11 @@ For those of you who have kids, the idea is simple.
 4. Post it on their bedroom door. They will love you for it. :)  
 
 Of course, you can use it for yourself too, to help keep track of what needs to be done.  
-  
 
 Important: Default extension is .txt so no need to add one.  
-  
-  
-  
-Note: This is my first attempt using classes in python.  
+
+<br>
+Note: This is my first attempt using classes in python.      
 I'm not sure I got it right but the program works as it should.
 
 
