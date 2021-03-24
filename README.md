@@ -1,5 +1,5 @@
-# monthly-planner
-**Monthly Planner for Chores/Duties**
+## Monthly Planner
+
 
 This is my first attempt using classes in python.  
 It confused me and I'm not sure I got it right but the program works as it should.
