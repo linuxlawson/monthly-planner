@@ -16,7 +16,7 @@ Of course, you can use it for yourself too, to help keep track of what needs to 
 Important: Default extension is .txt so no need to add one.  
 
 
-If using Windows, you will need to use Pyinstaller (or similiar) to make executable.
+Note: If using Windows, you will need to use Pyinstaller (or similiar) to make executable.
 
 
 <br>
