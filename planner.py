@@ -1,65 +1,54 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #Monthly Planner
 
-
-try:
-	import Tkinter as tk
-	import tkFileDialog
-except:
-	import tkinter as tk
-	import tkinter.filedialog as tkFileDialog
-
+import tkinter as tk
+import tkinter.filedialog as tkFileDialog
 
 root = tk.Tk()
 root.title("Monthly Planner")
-root.geometry("514x630")
+root.geometry("514x660")
 root.option_add("*Font", "TkDefaultFont 9")
 root.resizable(0,0)
 my_entries = []
 
 
-class MainApp:
-	def __init__(self, master):
-		self.master = master
-
-
-#labels
-		self.lab = tk.Label(master, text="Monthly Planner", font='Arial 10 bold')
-		self.lab.grid(row=0, column=0, sticky='w', padx=12, pady=4)
-		self.lab1 = tk.Label(master, text="Monthly Chores for You and Yours")
-		self.lab1.grid(row=1, column=0, sticky='w', padx=12, pady=(4,30))
+#title
+lab = tk.Label(root, text="Monthly Planner", font='Arial 10 bold')
+lab.grid(row=0, column=0, sticky='w', padx=12, pady=4)
+lab1 = tk.Label(root, text="Monthly Chores for You and Yours")
+lab1.grid(row=1, column=0, sticky='w', padx=12, pady=(4,30))
 
 #name
-		self.name = tk.Label(master, text="Name:")
-		self.name.grid(row=2, column=0,  sticky='nw', padx=12, pady=4)
-		MainApp.name = tk.Entry(master, width='12')
-		MainApp.name.grid(row=2, column=0, sticky='nw', padx=64, pady=2)
-		MainApp.name.focus_set()
+name = tk.Label(root, text="Name:")
+name.grid(row=2, column=0,  sticky='nw', padx=12, pady=4)
+name = tk.Entry(root, width='12')
+name.grid(row=2, column=0, sticky='nw', padx=64, pady=2)
+name.focus_set()
 
 #month
-		self.mon = tk.Label(master, text="Month:")
-		self.mon.grid(row=3, column=0,  sticky='nw', padx=12, pady=4)
-		MainApp.mon = tk.Entry(master, width='12')
-		MainApp.mon.grid(row=3, column=0, sticky='nw', padx=64, pady=(2,30))
+mon = tk.Label(root, text="Month:")
+mon.grid(row=3, column=0,  sticky='nw', padx=12, pady=4)
+mon = tk.Entry(root, width='12')
+mon.grid(row=3, column=0, sticky='nw', padx=64, pady=(2,30))
 
 
 #chores/duties
-		self.chore_lbl = tk.Label(master, text="Chores / Duties:",
-					fg='#1A1A1A', font=('Arial 10 bold'))
-		self.chore_lbl.grid(row=4, column=0, sticky='w', padx=12, pady=4)
+chore_lbl = tk.Label(root, text="Chores / Duties:",
+								fg='#1A1A1A', font=('Arial 10 bold'))
+chore_lbl.grid(row=4, column=0, sticky='w', padx=12, pady=4)
 
 
 #daily (entry field labels)
-		self.daily = tk.Label(master, text="Daily:")
-		self.daily.grid(row=5, column=0, sticky='w', padx=16, pady=2)
+daily = tk.Label(root, text="Daily:")
+daily.grid(row=5, column=0, sticky='w', padx=16, pady=2)
 
 #weekly
-		self.week = tk.Label(master, text="Weekly:")
-		self.week.grid(row=5, column=0, sticky='w', padx=187, pady=2)
+week = tk.Label(root, text="Weekly:")
+week.grid(row=5, column=0, sticky='w', padx=187, pady=2)
 
 #monthly
-		self.month = tk.Label(master, text="Monthly:")
-		self.month.grid(row=5, column=0, sticky='w', padx=357, pady=2)
+month = tk.Label(root, text="Monthly:")
+month.grid(row=5, column=0, sticky='w', padx=357, pady=2)
 
 
 #midFrame (contains entry boxes)
@@ -81,48 +70,48 @@ for y in range(3):
 
 
 #text box
-		MainApp.addi = tk.Label(text="Additional:")
-		MainApp.addi.grid(row=16, column=0,  sticky='w', padx=18, pady=0)
-		MainApp.tex = tk.Text(bd=1, width=58, height='10')
-		MainApp.tex.grid(row=17, column=0, sticky='w', padx=18, pady=(2,20))
-		MainApp.tex.config(wrap="word")
-		MainApp.tex.insert('1.0', "No allowance until chores are completed.")
+addi = tk.Label(text="Additional:")
+addi.grid(row=16, column=0,  sticky='w', padx=18, pady=0)
+tex = tk.Text(bd=1, width=58, height='10')
+tex.grid(row=17, column=0, sticky='w', padx=18, pady=(2,20))
+tex.config(wrap="word")
+tex.insert('1.0', "No allowance until chores are completed. :)")
 
 
 
 #functions
 def clear_fields(event=None):
-		MainApp.name.delete('0', 'end')
-		MainApp.mon.delete('0', 'end')
-		my_entries[0].delete('0', 'end')
-		my_entries[1].delete('0', 'end')
-		my_entries[2].delete('0', 'end')
-		my_entries[3].delete('0', 'end')
-		my_entries[4].delete('0', 'end')
-		my_entries[5].delete('0', 'end')
-		my_entries[6].delete('0', 'end')
-		my_entries[7].delete('0', 'end')
-		my_entries[8].delete('0', 'end')
-		my_entries[9].delete('0', 'end')
-		my_entries[10].delete('0', 'end')
-		my_entries[11].delete('0', 'end')
-		my_entries[12].delete('0', 'end')
-		my_entries[13].delete('0', 'end')
-		my_entries[14].delete('0', 'end')
-		my_entries[15].delete('0', 'end')
-		my_entries[16].delete('0', 'end')
-		my_entries[17].delete('0', 'end')
-		my_entries[18].delete('0', 'end')
-		my_entries[19].delete('0', 'end')
-		my_entries[20].delete('0', 'end')
-		my_entries[21].delete('0', 'end')
-		my_entries[22].delete('0', 'end')
-		my_entries[23].delete('0', 'end')
-		my_entries[24].delete('0', 'end')
-		my_entries[25].delete('0', 'end')
-		my_entries[26].delete('0', 'end')
-		MainApp.tex.delete('1.0', 'end')
-		MainApp.name.focus_set()
+	name.delete('0', 'end')
+	mon.delete('0', 'end')
+	my_entries[0].delete('0', 'end')
+	my_entries[1].delete('0', 'end')
+	my_entries[2].delete('0', 'end')
+	my_entries[3].delete('0', 'end')
+	my_entries[4].delete('0', 'end')
+	my_entries[5].delete('0', 'end')
+	my_entries[6].delete('0', 'end')
+	my_entries[7].delete('0', 'end')
+	my_entries[8].delete('0', 'end')
+	my_entries[9].delete('0', 'end')
+	my_entries[10].delete('0', 'end')
+	my_entries[11].delete('0', 'end')
+	my_entries[12].delete('0', 'end')
+	my_entries[13].delete('0', 'end')
+	my_entries[14].delete('0', 'end')
+	my_entries[15].delete('0', 'end')
+	my_entries[16].delete('0', 'end')
+	my_entries[17].delete('0', 'end')
+	my_entries[18].delete('0', 'end')
+	my_entries[19].delete('0', 'end')
+	my_entries[20].delete('0', 'end')
+	my_entries[21].delete('0', 'end')
+	my_entries[22].delete('0', 'end')
+	my_entries[23].delete('0', 'end')
+	my_entries[24].delete('0', 'end')
+	my_entries[25].delete('0', 'end')
+	my_entries[26].delete('0', 'end')
+	tex.delete('1.0', 'end')
+	name.focus_set()
 
 
 #save to text file
@@ -131,9 +120,9 @@ def save_com(event=None):
 	filetypes = (("Text Files", "*.txt"),("All Files", "*.*")))
 	if file:
 		file.write("\n")
-		file.write("Monthly Chores \ Duties\n\n\n")
-		file.write("Name:    " + (MainApp.name.get()) + "\n\n")
-		file.write("Month:   " + (MainApp.mon.get()) + "\n\n\n")
+		file.write("Monthly Chores / Duties\n\n\n")
+		file.write("Name:    " + (name.get()) + "\n\n")
+		file.write("Month:   " + (mon.get()) + "\n\n\n")
 
 		file.write("Daily: ".ljust(28) + "Weekly: ".ljust(28) + "Monthly: ".ljust(28) + "\n\n")
 
@@ -149,7 +138,7 @@ def save_com(event=None):
 
 		file.write("\n\n")
 		file.write("Additional: " +  "\n\n")
-		data = MainApp.tex.get('1.0', 'end-1c')
+		data = tex.get('1.0', 'end-1c')
 		file.write(data)
 		file.close()
 
@@ -235,7 +224,6 @@ helpmenu.add_command(label="About", command=about_com)
 helpmenu.add_command(label="Troubleshooting", command=trouble_com)
 
 
-
 #bindings
 root.bind_all('<Control-c>', clear_fields)
 root.bind_all('<Control-s>', save_com)
@@ -243,5 +231,4 @@ root.bind_all('<Control-q>', exit_com)
 
 
 root.protocol("WM_DELETE_WINDOW")
-app = MainApp(root)
 root.mainloop()
