@@ -1,7 +1,7 @@
 ## Monthly Planner
 
 
-A monthly planner that can be used by you and/or your kids (if you have),  
+A monthly planner that can be used by you and/or whoever else,  
 with entry fields to be filled in for: Daily, Weekly, and Monthly chores/duties.  
 Also,  entry fields for name and month, and a text box for any additional notes.  
 
