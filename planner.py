@@ -14,52 +14,52 @@ my_entries = []
 
 #title
 lab = tk.Label(root, text="", font='Arial 10 bold')
-lab.grid(row=0, column=0, sticky='w', padx=12, pady=0)
+lab.grid(column=0, row=0, padx=12, pady=0, sticky='w')
 #lab1 = tk.Label(root, text="Monthly Chores for You and Yours")
-#lab1.grid(row=1, column=0, sticky='w', padx=12, pady=(4,30))
+#lab1.grid(column=0, row=1, padx=12, pady=(4,30), sticky='w')
 
 #name
 name = tk.Label(root, text="Name:")
-name.grid(row=2, column=0,  sticky='nw', padx=12, pady=4)
+name.grid(column=0, row=1, padx=12, pady=4, sticky='nw')
 name = tk.Entry(root, width='14')
-name.grid(row=2, column=0, sticky='nw', padx=64, pady=1)
+name.grid(column=0, row=1, padx=64, pady=1, sticky='nw')
 name.focus_set()
 
 #month
 mon = tk.Label(root, text="Month:")
-mon.grid(row=3, column=0,  sticky='nw', padx=12, pady=4)
+mon.grid(column=0, row=2, padx=12, pady=4, sticky='nw')
 mon = tk.Entry(root, width='14')
-mon.grid(row=3, column=0, sticky='nw', padx=64, pady=(1,18))
+mon.grid(column=0, row=2, padx=64, pady=(1,18), sticky='nw')
 
 
 #chores/duties
 chore_lbl = tk.Label(root, text="Chores / Duties:",
 								fg='#1A1A1A', font=('Arial 10 bold'))
-chore_lbl.grid(row=4, column=0, sticky='w', padx=12, pady=4)
+chore_lbl.grid(column=0, row=3, padx=12, pady=4, sticky='w')
 
 
 #daily (entry field labels)
 daily = tk.Label(root, text="Daily:")
-daily.grid(row=5, column=0, sticky='w', padx=16, pady=2)
+daily.grid(column=0, row=4, padx=16, pady=2, sticky='w')
 
 #weekly
 week = tk.Label(root, text="Weekly:")
-week.grid(row=5, column=0, sticky='w', padx=187, pady=2)
+week.grid(column=0, row=4, padx=187, pady=2, sticky='w', )
 
 #monthly
 month = tk.Label(root, text="Monthly:")
-month.grid(row=5, column=0, sticky='w', padx=357, pady=2)
+month.grid(column=0, row=4, padx=357, pady=2, sticky='w')
 
 
 #midFrame (contains entry boxes)
 midframe = tk.Frame(relief='flat')
-midframe.grid(row=6, column=0, sticky='nw', padx=0, pady=(0, 20))
+midframe.grid(column=0, row=5, padx=0, pady=(0, 20), sticky='nw')
 
 #column/row loops
 for y in range(3):
 	for x in range(9):
 		my_entry = tk.Entry(midframe, bd=1, width='16')
-		my_entry.grid(row=x, column=y, sticky='w', padx=18, pady=2)
+		my_entry.grid(column=y, row=x, padx=18, pady=2, sticky='w')
 		my_entries.append(my_entry)
 
 
@@ -71,9 +71,9 @@ for y in range(3):
 
 #text box
 addi = tk.Label(text="Additional:")
-addi.grid(row=16, column=0,  sticky='w', padx=18, pady=0)
+addi.grid(column=0, row=6, padx=18, pady=0, sticky='w')
 tex = tk.Text(bd=1, width=58, height='12')
-tex.grid(row=17, column=0, sticky='w', padx=18, pady=(2,20))
+tex.grid(column=0, row=7, padx=18, pady=(2,20), sticky='w')
 tex.config(wrap="word")
 tex.insert('1.0', "No allowance until chores are completed. :)")
 
