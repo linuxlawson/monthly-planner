@@ -6,30 +6,30 @@ import tkinter.filedialog as tkFileDialog
 
 root = tk.Tk()
 root.title("Monthly Planner")
-root.geometry("514x660")
+root.geometry("514x616")
 root.option_add("*Font", "TkDefaultFont 9")
-root.resizable(0,0)
+#root.resizable(0,0)
 my_entries = []
 
 
 #title
-lab = tk.Label(root, text="Monthly Planner", font='Arial 10 bold')
-lab.grid(row=0, column=0, sticky='w', padx=12, pady=4)
-lab1 = tk.Label(root, text="Monthly Chores for You and Yours")
-lab1.grid(row=1, column=0, sticky='w', padx=12, pady=(4,30))
+lab = tk.Label(root, text="", font='Arial 10 bold')
+lab.grid(row=0, column=0, sticky='w', padx=12, pady=0)
+#lab1 = tk.Label(root, text="Monthly Chores for You and Yours")
+#lab1.grid(row=1, column=0, sticky='w', padx=12, pady=(4,30))
 
 #name
 name = tk.Label(root, text="Name:")
 name.grid(row=2, column=0,  sticky='nw', padx=12, pady=4)
-name = tk.Entry(root, width='12')
-name.grid(row=2, column=0, sticky='nw', padx=64, pady=2)
+name = tk.Entry(root, width='14')
+name.grid(row=2, column=0, sticky='nw', padx=64, pady=1)
 name.focus_set()
 
 #month
 mon = tk.Label(root, text="Month:")
 mon.grid(row=3, column=0,  sticky='nw', padx=12, pady=4)
-mon = tk.Entry(root, width='12')
-mon.grid(row=3, column=0, sticky='nw', padx=64, pady=(2,30))
+mon = tk.Entry(root, width='14')
+mon.grid(row=3, column=0, sticky='nw', padx=64, pady=(1,18))
 
 
 #chores/duties
@@ -72,7 +72,7 @@ for y in range(3):
 #text box
 addi = tk.Label(text="Additional:")
 addi.grid(row=16, column=0,  sticky='w', padx=18, pady=0)
-tex = tk.Text(bd=1, width=58, height='10')
+tex = tk.Text(bd=1, width=58, height='12')
 tex.grid(row=17, column=0, sticky='w', padx=18, pady=(2,20))
 tex.config(wrap="word")
 tex.insert('1.0', "No allowance until chores are completed. :)")
