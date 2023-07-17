@@ -1,9 +1,9 @@
 ## Monthly Planner
 
 
-A monthly planner that can be used by you and/or whoever else,  
-with entry fields to be filled in for: Daily, Weekly, and Monthly chores/duties.  
-Also,  entry fields for name and month, and a text box for any additional notes.  
+A monthly planner that can be filled out and used to plan your month.  
+Entry fields include: Daily, Weekly, and Monthly chores and/or duties.  
+Also, a text box for any additional notes.  
 
 For those of you who have kids, the idea is simple.  
 1. Fill in *some* of the fields  
@@ -13,10 +13,12 @@ For those of you who have kids, the idea is simple.
 
 Of course, you can use it for yourself too, to help keep track of what needs to be done.  
 
+<br>  
+
 Important: Default extension is .txt so no need to add one.  
 
-
-Note: If using Windows, you will need to use Pyinstaller (or similiar) to make executable.
+Note:  
+If using Windows, you will need to use Pyinstaller (or similiar) to make executable.
 
 
 <br>
