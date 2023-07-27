@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #Monthly Planner
 
 import tkinter as tk
@@ -34,7 +34,7 @@ mon.grid(column=0, row=2, padx=64, pady=(1,18), sticky='nw')
 
 #chores/duties
 chore_lbl = tk.Label(root, text="Chores / Duties:",
-								fg='#1A1A1A', font=('Arial 10 bold'))
+					fg='#1A1A1A', font=('Arial 10 bold'))
 chore_lbl.grid(column=0, row=3, padx=12, pady=4, sticky='w')
 
 
